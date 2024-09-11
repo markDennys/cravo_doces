@@ -20,7 +20,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 50%;
+    height: 70%;
     flex-direction: column;
     max-width: 800px; /* Limita a largura máxima da página para manter a estética em telas maiores */
 }
