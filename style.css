@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5DC;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px; /* Adicionando um pouco de padding para evitar que o conteúdo fique colado nas bordas da tela */
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    flex-direction: column;
+    max-width: 800px; /* Limita a largura máxima da página para manter a estética em telas maiores */
+}
+
+.image-container {
+    margin-bottom: 30px;
+}
+
+.image-container img {
+    max-width: 150px; /* Tamanho reduzido da logo */
+    border-radius: 50%;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.link {
+    display: block;
+    padding: 20px;
+    background: linear-gradient(135deg, #c800ff, #ea9dff);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 900;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    border: 2px solid transparent;
+    font-family: 'Poppins', sans-serif;
+    width: 100%; /* Faz com que o link ocupe toda a largura disponível */
+    max-width: 500px; /* Limita a largura máxima dos links para uma apresentação melhor */
+    margin: 0 auto; /* Centraliza os links horizontalmente */
+}
+
+.link i {
+    margin-right: 10px;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    border-radius: 12px;
+}
+
+.link:hover::before {
+    opacity: 1;
+}
+
+.link:hover {
+    background: linear-gradient(135deg, #ffdde1, #CB6CE6);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    border-color: #fff;
+}
+
+.link:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.info{
+    margin-top: 30px;
+}
+
+.info h3 {
+    color: #9500be;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #9500be;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
