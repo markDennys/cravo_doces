@@ -1,73 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cravo Doces</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chá Revelação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <div class="container">
-      <div class="image-container">
-        <img
-          src="./458396224_1505040790384320_2944574654985864735_n.jpg"
-          alt="Imagem de Título"
-        />
-      </div>
-      <div class="links">
-        <a
-          href="https://wa.me/5581985961871?text=Ol%C3%A1%2C%20tudo%20bem%20%3F%20%0AGostaria%20de%20fazer%20uma%20encomenda%20!%20"
-          class="link"
-          target="_blank"
-        >
-          <i class="fab fa-whatsapp"></i> Faça sua encomenda
-        </a>
-        <a href="#" class="link">
-          <i class="fas fa-cookie"></i> Nossas Receitas
-        </a>
-        <a href="#" class="link"
-          ><i class="fa-solid fa-house"></i>Nosso Endereço</a
-        >
-      </div>
-      <div class="info">
-         
-        <h3 id="dynamic-title">Bem-vindo ao mundo dos doces!</h3>
-      </div>
+        <h1>Chá Revelação</h1>
+        <p>Clique no botão para iniciar a contagem regressiva e revelar o sexo do bebê!</p>
+        <button id="revealBtn">Revelar!</button>
     </div>
-    <footer>
-        <p>&copy; 2024 Desenvolvido com ❤️ por mgtech</p>
-    </footer>
-    <script>
-        const titles = [
-            "Doçura que transforma momentos.",
-            "Sabor que faz sorrir.",
-            "Delícias que derretem no coração.",
-            "Onde a felicidade é feita de açúcar.",
-            "Pequenas alegrias em cada mordida."
-        ];
 
-        let currentIndex = 0;
+    <div id="countdown" class="countdown"></div> <!-- Contagem regressiva aqui -->
 
-        function changeTitle() {
-            currentIndex = (currentIndex + 1) % titles.length;
-            document.getElementById('dynamic-title').innerText = titles[currentIndex];
-        }
-
-        setInterval(changeTitle, 5000); // Muda o título a cada 5 segundos
-    </script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
